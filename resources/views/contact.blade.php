@@ -16,7 +16,7 @@
 
         <div>
             <label for="email">メール</label>
-            <input id="email" name="email" required>
+            <input id="email" name="email" type="email" required>
         </div>
 
         <div>
