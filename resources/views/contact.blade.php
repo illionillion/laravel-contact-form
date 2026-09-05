@@ -7,20 +7,21 @@
 <body>
     <h1>お問い合わせ</h1>
 
-    <form>
+    <form action="/" method="post">
+        @csrf
         <div>
             <label for="name">名前</label>
-            <input id="name">
+            <input id="name" name="name">
         </div>
 
         <div>
             <label for="email">メール</label>
-            <input id="email">
+            <input id="email" name="email">
         </div>
 
         <div>
             <label for="body">お問い合わせ内容</label>
-            <textarea id="body"></textarea>
+            <textarea id="body" name="body"></textarea>
         </div>
 
         <button type="submit">送信</button>
