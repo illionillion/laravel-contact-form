@@ -11,17 +11,17 @@
         @csrf
         <div>
             <label for="name">名前</label>
-            <input id="name" name="name">
+            <input id="name" name="name" required>
         </div>
 
         <div>
             <label for="email">メール</label>
-            <input id="email" name="email">
+            <input id="email" name="email" required>
         </div>
 
         <div>
             <label for="body">お問い合わせ内容</label>
-            <textarea id="body" name="body"></textarea>
+            <textarea id="body" name="body" required></textarea>
         </div>
 
         <button type="submit">送信</button>
