@@ -19,3 +19,9 @@ Route::post('/', function (Request $request) {
 
     return view('complete');
 });
+
+Route::get('/list', function () {
+    $contacts = Contact::latest()->get();
+    
+    return view('list', ['contacts' => $contacts]);
+});
